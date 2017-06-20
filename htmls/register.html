@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>OPPO注册</title>
+		<link rel="stylesheet" href="../css/register.css" />
+		<style type="text/css">
+			::-moz-selection{background:#009b73; color:white;} 
+			::selection {background:#009b73; color:white;} 
+		</style>
+	</head>
+	<body>
+		<div id="top">
+			<ul>
+				<li><a href="../index.html">OPPO官网</a></li>
+				<li>OPPO社区</li>
+				<li>ColorOS</li>
+			</ul>
+		</div>
+		<div id="section">
+			<img src="../img/logo.svg" alt="" />
+			<br />
+			<br />
+			<br />
+			<h3 style="color:#737373">OPPO账号注册</h3>
+		</div>
+		<form action="login.html" method="get" id="register">
+			<input type="text" id="name" placeholder="请输入用户名"/>
+			<input type="password" id="password" placeholder="“请输入密码"/>
+			<input type="password" id="password1" placeholder="请确认密码" />
+			<div id="code" ><input type="text" id="code_1" placeholder="请输入验证码"/><i id="code_2" style="text-align: center;"></i></div>
+			<input type="submit" value="注册" id="last"/>
+		</form>
+		<script src="../js/jquery-1.12.4.min.js"></script>
+		<script> 
+		$(function(){	
+			changeImg();
+          $("#code_2").on("click",changeImg)
+            var code;
+            function changeImg(){                  
+                var arrays=new Array(  
+                    '1','2','3','4','5','6','7','8','9','0',  
+                    'a','b','c','d','e','f','g','h','i','j',  
+                    'k','l','m','n','o','p','q','r','s','t',  
+                    'u','v','w','x','y','z',  
+                    'A','B','C','D','E','F','G','H','I','J',  
+                    'K','L','M','N','O','P','Q','R','S','T',  
+                    'U','V','W','X','Y','Z'               
+                );  
+                code='';
+                for(var i=0;i<6;i++){  
+                
+                    var r=parseInt(Math.random()*arrays.length);  
+                    code+=arrays[r];                      
+                }                
+                $("#code_2").text(code);
+            }  
+            $("#register").on("submit",function(){
+            	var _name = $("#name").val(),
+            		_passworde = $("#password").val(),
+            		_password1 = $("#password1").val(),
+            		reg = /\w{8,10}/;
+            	var array = reg.exec(_name),
+            		array1 = reg.exec(_passworde);
+            	var input_code = $("#code_1").val();
+            	if(array !=null&&array1 !=null&&_passworde==_password1&&input_code.toLocaleLowerCase()==code.toLowerCase()){
+            		return;
+            	}else{
+            		alert("输入有误，请重新输入！");
+            		return false;
+            	}
+            });
+            $("#last").on("click",function(){
+            document.cookie = "name="+$("#name").val()+";path=/";
+            document.cookie ="password="+$("#password").val()+";path=/";						      
+            });			 
+            });
+		</script>
+	</body>
+</html>

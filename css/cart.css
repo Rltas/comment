@@ -1,0 +1,304 @@
+*{margin:0;padding:0}
+ul{list-style: none}
+a{text-decoration: none}
+body,html{
+	width:100%;
+	background:#fafafa;
+	}
+#top{
+	width:100%;
+	height:30px;
+	background:#009b72;
+}
+#top ul{
+	float: right;
+	padding-right:50px;
+}
+#top ul li{
+	float:left;
+	width:65px;
+	border-left:1px solid #47b488;
+	height:30px;
+	text-align:center;
+	line-height:30px
+}
+#top ul li a{
+	color:white;
+	font-size: 13px;
+	font-weight: bold;
+}
+#nav{
+	width:100%;
+	height:85px;
+	line-height:85px;
+	padding-left:42px;
+	box-sizing: border-box;
+}
+#nav ul .nav_cur{
+	border-bottom: 2px solid #009B73;
+}
+#nav img{
+	width:121px;
+	height: 28px
+}
+#nav ul {
+	float:right;
+	padding-right:65px;
+}
+#nav ul li{
+	float:left;
+	margin-left:43px;
+	height:56px;
+}
+#nav ul li a{
+	color:#7b7b7b;
+	font-size:14px;	
+}
+#global{
+	width:100%;
+	height:140px;
+	background:#ededed;
+    margin-top:6px;
+    position:absolute;     
+    z-index: 999;
+    display: none;
+}
+#global h3{
+	text-indent:2em;
+	color:#292929;
+}
+#global ul{
+	width:92%;
+	margin:0 auto;
+}
+#global ul li {
+	width:138px;
+	height:36px;
+	float:left;
+	line-height:36px;
+}#global ul li a{
+	color:#7b7b7b;
+	font-weight: bolder;
+	
+}
+#count{
+	position:absolute;
+	right:45px;
+	top:40px;
+	width:28px;
+	height:28px;
+	background:#009B72;
+	color:white;
+	font-size: 12px;
+	font-weight: bolder;
+	border-radius: 14px;
+	line-height:28px;
+	text-align:center
+}
+#main{
+	width:92%;
+	height:788px;
+	margin:0 auto;
+	cursor: pointer;
+	margin-bottom: 50px;
+}
+#left{
+	width:44%;
+	height:700px;
+	float:left;
+	overflow: hidden;
+	text-align: center;
+	position:relative;
+}
+#right{
+	width:50%;
+	height:788px;
+	float:right;
+}
+#left ul li img{
+	width:366px;
+	height:428px;
+}
+#left ul li {
+	float:left;
+	width:518px;
+}
+#left ul{
+	width:10000px;
+	position:absolute;
+	left:0;
+	top:0;
+}
+#pages{
+	position:absolute;
+	top:400px;
+	left:0;
+}
+#pages div{
+	float:left;
+	margin-left:38px;	
+}
+#pages div.current{
+	border-radius: 50%;
+	border:1px solid #009B72
+}
+#xuanze1{
+	width:100%;
+	height:142px;
+	border-bottom: 2px dashed #e2e2e2;
+}
+#xuanze1_l{
+	width:70px;
+	height:142px;
+	float:left;
+	text-align:center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+#xuanze1_r{
+	width:500px;
+	height:142px;
+	float: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+#shang,#zhong,#xia{
+	width:100%;
+	height:32px;
+}
+.middle{
+	width:150px;
+	height:30px;
+	border:1px solid #e2e2e2;
+	float:left;
+	margin-right:12px;
+	text-align: center;
+	line-height: 30px;
+}
+.xianzai{
+	border:1px solid #009B72
+}
+#zuihou{
+	width:100%;
+	height:72px;
+	background:white;
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#one,#cart,#buy{
+	width:160px;
+	height:40px;
+}
+#cart{
+	background:#d4eee1;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 40px;
+}
+#buy{
+	background:#fb5e5e;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 40px;
+}
+#one #number{
+	width:120px;
+	height:38px;
+	border:none;
+	text-align: center;
+}
+#one{
+	width:155px;
+	height:38px;
+	border:1px solid #cccccc;
+}
+#bottom_tab{
+	width:100%;
+	height:50px;
+	border-bottom: 2px solid #f0f0f0;
+}
+#bottom_tab ul li{
+	width:150px;
+	text-align:center;
+	height:50px;
+	line-height: 50px;
+	font-size: 18px;
+	color:#575757;
+	float:left;
+}
+#bottom_tab ul {
+	padding-left:4%;
+	box-sizing: border-box;
+	
+}
+#bottom_tab ul li.current{
+	color:white;
+	background:#409f73;
+}
+#content{
+	width:100%;
+	text-align: center;
+}
+#content div{
+	display:none;
+}
+#footer{
+	width:92%;
+	height:182px;
+	margin: 0 auto;
+	border-bottom: 1px solid #cfcfcf;
+	display: flex;
+	justify-content: space-between;
+	/*margin-top: 70px;*/
+}
+#footer div{
+	width:21%;
+	height:110px;
+}
+#footer div ul li{
+	font-size: 14px;
+	line-height:28px;
+	color:#363636
+}
+#footer #phone{
+	text-align: right;
+}
+footer{
+	width:92%;
+	margin:0 auto;
+	margin-top:18px;
+	display: flex;
+	justify-content: space-between;
+	line-height: 48px;
+	height:70px;
+}
+footer #bottom{
+	text-align: right;
+	cursor: pointer;
+}
+#dibu{
+	width:100%;
+	background:#f6f6f6;
+	padding-top:32px;
+}
+#back_to{
+	cursor: pointer;
+	 position: fixed;
+	 bottom: 22px;right:50px
+}
+#bottom{
+	cursor: pointer;
+	 position: fixed;
+	 bottom:-20px;right:50px
+}
+ #right_1{
+	margin-right: 42px;
+}#zixun{
+	position:fixed;
+	z-index: 999;
+	top:50%;
+	right:28px;
+}

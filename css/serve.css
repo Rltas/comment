@@ -1,0 +1,291 @@
+*{margin:0;padding:0}
+ul{list-style: none}
+i{font-style: normal;}
+a{text-decoration: none}
+body,html{
+	width:100%;
+	}
+#top{
+	width:100%;
+	height:30px;
+	background:#009b72;
+}
+#top ul{
+	float: right;
+	padding-right:50px;
+}
+#top ul li{
+	float:left;
+	width:65px;
+	border-left:1px solid #47b488;
+	height:30px;
+	text-align:center;
+	line-height:30px
+}
+#top ul li a{
+	color:white;
+	font-size: 13px;
+	font-weight: bold;
+}
+#nav{
+	width:100%;
+	height:85px;
+	line-height:85px;
+	padding-left:42px;
+	box-sizing: border-box;
+}
+#nav ul .nav_cur{
+	border-bottom: 2px solid #009B73;
+}
+#nav img{
+	width:121px;
+	height: 28px
+}
+#nav ul {
+	float:right;
+	padding-right:65px;
+}
+#nav ul li{
+	float:left;
+	margin-left:43px;
+	height:56px;
+}
+#nav ul li a{
+	color:#7b7b7b;
+	font-size:14px;	
+}
+#global{
+	width:100%;
+	height:140px;
+	background:#ededed;
+    margin-top:6px;
+    position:absolute;     
+    z-index: 999;
+    display: none;
+}
+#global h3{
+	text-indent:2em;
+	color:#292929;
+}
+#global ul{
+	width:92%;
+	margin:0 auto;
+}
+#global ul li {
+	width:138px;
+	height:36px;
+	float:left;
+	line-height:36px;
+}#global ul li a{
+	color:#7b7b7b;
+	font-weight: bolder;
+	
+}
+.serve_h3{
+	margin-top:74px;
+	margin-bottom: 24px;
+	text-indent:51px ;
+	font-size: 25px;
+	color:#393939
+}
+#serve_self{
+	width:92%;
+	margin:0 auto;
+	height:300px;
+	display: flex;
+	justify-content: space-between;
+	align-content: space-between;
+	flex-wrap: wrap;
+}
+#products{
+	width:92%;
+	margin:0 auto;
+	/*height:290px;*/
+	display: flex;
+	justify-content: space-between;
+	align-content: space-between;
+	flex-wrap: wrap;
+}
+#products .r{
+	position:relative;
+	height:136px;
+	border-bottom:10px solid white;
+}
+#products #jiantou{
+	width:20px;
+	height: 20px;
+	border-radius: 10px;
+	background:#ffffff;
+	color:#adadaf;
+	font-weight: bolder;
+	font-size: 10px;
+	position: absolute;
+	bottom: 20px;
+	right:20px;
+	text-align: center;
+	line-height: 20px;
+	cursor: pointer;
+}
+#products .r span{
+	width:379px;
+	height:10px;
+	position:absolute;
+	bottom:-10px;left:0;
+	background:#009B72;
+	display: none;
+}
+#side{
+	width:92%;
+	margin:0 auto;
+	margin-top:72px;
+	display: flex;
+	justify-content: space-between;
+}
+#side #left,#right{
+	width:47.5%;
+}
+#side .left,.right{
+	width:100%;
+	border-bottom: 1px solid #e2e2e2;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;	
+	line-height: 68px;
+}
+#side b{
+	width: 22px;
+	height:22px;
+	border-radius: 11px;
+	background: #afafaf;
+	color: white;
+	line-height:22px;
+	text-align: center;
+	cursor: pointer;
+	margin-top:22px;
+}
+#side i{
+	font-size: 14px;
+	color:#afafaf;
+}
+#side span{
+	font-size: 17px;
+	color:#393939;
+}
+#side .text{
+	border:1px solid black;
+	margin-bottom: 20px;
+	width:100%;
+	display: none;
+}
+#side pre{
+ 	line-height: 26px;
+ 	font-size: 12px;
+ 	color: #393939;
+}
+#can{
+	width:100%;
+	height:354px;
+	border:1px solid #e0e0e0;
+	margin-bottom: 21px;
+	position:relative;
+	overflow: hidden;
+	display:none;
+}
+#can ul {	
+	position:absolute;
+	left:0;
+	top:0;
+}
+#can ul li{
+	float: left;
+	width:1160px;
+	height:345px;
+	display: flex;
+	justify-content: space-around;
+	
+}
+#can ul li div{
+	width:18%;
+	height:345px;
+	float: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+#last,#next{
+	width:54px;
+	height:54px;
+	border-radius: 27px;
+	background:#e0e0e0;
+	color:white;
+	font-weight: bolder;
+	position: absolute;
+	bottom:0;top:0;
+	margin:auto;
+	font-size: 28px;
+	text-align: center;
+	line-height: 54px;
+	cursor: pointer;
+	opacity: 0.68;
+}
+#next{
+	right:0;
+}
+#can ul li p{
+	text-align: center;
+}
+#footer{
+	width:92%;
+	height:182px;
+	margin: 0 auto;
+	border-bottom: 1px solid #cfcfcf;
+	display: flex;
+	justify-content: space-between;
+}
+#footer div{
+	width:21%;
+	height:110px;
+}
+#footer div ul li{
+	font-size: 14px;
+	line-height:28px;
+	color:#363636
+}
+#footer #phone{
+	text-align: right;
+}
+footer{
+	width:92%;
+	margin:0 auto;
+	margin-top:18px;
+	display: flex;
+	justify-content: space-between;
+	line-height: 48px;
+	height:70px;
+}
+footer #bottom{
+	text-align: right;
+	cursor: pointer;
+}
+#dibu{
+	width:100%;
+	background:#f6f6f6;
+	margin-top:70px;
+	padding-top:30px;
+}
+#back_to{
+	cursor: pointer;
+	 position: fixed;
+	 bottom: 22px;right:50px
+}
+#bottom{
+	cursor: pointer;
+	 position: fixed;
+	 bottom:-16px;right:50px
+}
+#right_1{
+	margin-right: 42px;
+}
+#bottom,#back_to{
+	display: none;
+}
